@@ -3,6 +3,9 @@
 # ========================
 src/main/resources/.env
 # (.env.example är okej att pusha, så vi ignorerar den inte)
+.env
+.env.*
+!.env.example
 
 # ========================
 # FRONTEND (Node / Vite)
