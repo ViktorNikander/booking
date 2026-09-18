@@ -43,3 +43,9 @@ jobs:
           context: .
           push: true
           tags: viktornikander/booking:latest
+
+      # 7. Redeploy on Railway
+      - name: Redeploy on Railway
+        run: npx -y @railway/cli@latest redeploy --service booking --yes
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
